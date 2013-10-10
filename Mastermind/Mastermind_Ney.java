@@ -39,7 +39,9 @@ public class Mastermind_Ney {
 					hasPlayerWon = true;
 				}
 				else {
-					turnCount++;
+					if (p2.getPlayerCode().length() == 4) {
+						turnCount++;
+					}
 				}
 			
 				if (hasPlayerWon == true || turnCount > NR.getNumRounds( )) {
